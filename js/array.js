@@ -8,6 +8,9 @@ let favoriteFood = [
   "peppersoup",
 ];
 let soups = ["ogbono", "egusi", "okro", "afang", "bitterleafsoup"];
+
+// 1. forEach : it executes a function once for each aarray element
+favoriteFood.forEach((food) => console.log(food));
 /**plantain 
 
 afang 
@@ -19,9 +22,6 @@ pounded yam 
 beans 
 
 peppersoup **/
-
-// 1. forEach : it executes a function once for each aarray element
-favoriteFood.forEach((food) => console.log(food));
 
 // 2. map:
 
@@ -66,18 +66,85 @@ console.log(favoriteFood);
   'spag' ]
  */
 
-// 6. splice :
+// 6. splice : this method add element depending on the postion to startwith and remove elements depending on the index of the element. this method uses parameters like (startwith, deletcount,item0, item1, /* … ,*/ itemN )
+console.log(favoriteFood.splice(5, 5, "friedPlantain"));
+/**
+ * ['peppersoup', 'spag']
+ */
+console.log(favoriteFood);
+/**
+ * [ 'plantain',
+  'afang',
+  'edikaikong',
+  'pounded yam',
+  'beans',
+  'friedPlantain' ]
+ */
+console.log(favoriteFood.splice(2, 2, "moimoi", "akara"));
+/*
+[ 'edikaikong', 'pounded yam' ]
+*/
+console.log(favoriteFood);
+/*
+[ 'plantain', 'afang', 'moimoi', 'akara', 'beans', 'friedPlantain' ]
+*/
+
 // 7. slice
-// 8. shift
-// 9. unshift
-// 10. join
-// 11. every
-// 12. filter
-// 13. indexOf
+console.log(favoriteFood.slice(2)); //[ 'moimoi', 'akara', 'beans', 'friedPlantain' ]
+console.log(favoriteFood); //[ 'plantain', 'afang', 'moimoi', 'akara', 'beans', 'friedPlantain' ]
+
+// 8. shift: use to remove an element at the the beginning of an array or remove the first element of an array
+console.log(favoriteFood.shift()); //plantain
+console.log(favoriteFood); //[ 'afang', 'moimoi', 'akara', 'beans', 'friedPlantain' ]
+
+// 9. unshift ; use to add an element or elements at the the beginning of an array
+console.log(favoriteFood.unshift("yam", "bread")); //7
+console.log(favoriteFood.unshift("semo")); //8
+console.log(favoriteFood);
+
+// 10. join : use to concantenate or join strings together in an array and returns a new string
+let soup = ["okra", "egusi", "banga"];
+console.log(soup.join("")); //okraegusibanga
+console.log(soup.join("-")); //okra-egusi-banga
+// 11. every: it is use to check if all element in an array pass a test of a specific function and returns a boolean value
+
+// 13. indexOf: it tells us the index of an element in an array and returns it number
+console.log(soups); //[ 'ogbono', 'egusi', 'okro', 'afang', 'bitterleafsoup' ]
+console.log(soups.indexOf("okro")); //2
+console.log(soups.indexOf("afang")); //3
+console.log(soups.indexOf("ogbono")); //0
+
 // 14. reduce
-// 15. reverse
-// 16. sort
-// 17. toString
+
+// 15. sort: use to sort out or arrange an array in order of accending or descending order
+console.log(favoriteFood.sort());
+/**[ 'afang',
+  'akara',
+  'beans',
+  'bread',
+  'friedPlantain',
+  'moimoi',
+  'semo',
+  'yam' ] */
+
+// 16. reverse: use to reverse an array in the opposite direction.
+console.log(favoriteFood.reverse());
+/** 'yam',
+  'semo',
+  'moimoi',
+  'friedPlantain',
+  'bread',
+  'beans',
+  'akara',
+  'afang' ] */
+
+// 17. toString: it returns a string
+let num4 = [4, 5, 6, 7];
+console.log(num4.toString());
+// 4,5,6,7
+console.log(soups.toString());
+// ogbono,egusi,okro,afang,bitterleafsoup
+
 // 18. at
 // 19. find
 // 20. some
