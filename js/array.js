@@ -41,7 +41,7 @@ console.log(favoriteFood.concat(soups));
   'bitterleafsoup' ]
  */
 
-// 4. push : adds rlement to the end of an array and returns a new length
+// 4. push : adds element to the end of an array and returns a new length
 console.log(favoriteFood.push("spag", "noddles")); //8
 console.log(favoriteFood);
 /*[ 'plantain',
@@ -100,12 +100,20 @@ console.log(favoriteFood); //[ 'afang', 'moimoi', 'akara', 'beans', 'friedPlanta
 // 9. unshift ; use to add an element or elements at the the beginning of an array
 console.log(favoriteFood.unshift("yam", "bread")); //7
 console.log(favoriteFood.unshift("semo")); //8
-console.log(favoriteFood);
+console.log(favoriteFood); /**[ 'semo',
+  'yam',
+  'bread',
+  'afang',
+  'moimoi',
+  'akara',
+  'beans',
+  'friedPlantain' ] */
 
 // 10. join : use to concantenate or join strings together in an array and returns a new string
 let soup = ["okra", "egusi", "banga"];
 console.log(soup.join("")); //okraegusibanga
 console.log(soup.join("-")); //okra-egusi-banga
+
 // 11. every: it is use to check if all element in an array pass a test of a specific function and returns a boolean value
 
 // 13. indexOf: it tells us the index of an element in an array and returns it number
@@ -146,5 +154,5 @@ console.log(soups.toString());
 // ogbono,egusi,okro,afang,bitterleafsoup
 
 // 18. at
-// 19. find
+// 19. find: it is use to find an element or word in an array
 // 20. some
