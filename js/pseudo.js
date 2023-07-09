@@ -7,4 +7,3 @@ if (clubberAge < vipAge) {
 } else {
   console.log("invalid: Enter a number");
 }
-ur;
