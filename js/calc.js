@@ -1,0 +1,10 @@
+const button = document.querySelectorAll("button");
+console.log(button);
+const display = document.querySelector("#display");
+console.log(display);
+const delete_button = document.querySelector(".delete");
+console.log(delete_button);
+const reset = document.querySelector(".reset");
+console.log(reset);
+const main = document.querySelector("main");
+console.log(main);

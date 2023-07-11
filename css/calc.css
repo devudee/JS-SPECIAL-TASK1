@@ -1,0 +1,78 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "League Spartan", sans-serif;
+  font-family: "Overpass", sans-serif;
+  font-weight: 700;
+}
+
+:root {
+  --Very_dark_desaturated_blue: hsl(222, 26%, 31%);
+  --Very_dark_saturated_blue: hsl(224, 36%, 15%);
+  --red: hsl(6, 63%, 50%);
+  --Dark_red: hsl(6, 70%, 34%);
+  --light_grayish_orange: hsl(30, 25%, 89%);
+  --Very_dark_grayish_blue: hsl(221, 14%, 31%);
+  --White: hsl(0, 0%, 100%);
+  --grayish_orange: hsl(28, 16%, 65%);
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+  background-color: var(--Very_dark_desaturated_blue);
+}
+main {
+  max-width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  /* background-color: var(--Very_dark_saturated_blue); */
+}
+#display {
+  height: 6rem;
+  font-size: 2.5rem;
+  background-color: var(--Very_dark_saturated_blue);
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  color: var(--White);
+}
+.buttons {
+  display: grid;
+
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(4, 1fr);
+  padding: 1.5rem;
+  gap: 0.6rem;
+  background-color: var(--Very_dark_saturated_blue);
+}
+
+button {
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+  font-size: 1.3rem;
+  background-color: var(--light_grayish_orange);
+}
+.reset {
+  grid-row: 5 / span 1;
+  grid-column: 1 / span 2;
+  background-color: var(--Very_dark_desaturated_blue);
+  color: var(--White);
+  font-size: 1rem;
+}
+.equ {
+  grid-row: 5 / span 1;
+  grid-column: 3 / span 2;
+  font-size: 1rem;
+  background-color: rgba(255, 68, 0, 0.925);
+  color: var(--White);
+}
+
+button:hover {
+  background-color: aliceblue;
+}
